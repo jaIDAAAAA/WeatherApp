@@ -1,8 +1,8 @@
 function handleSearchsubmit(event) {
     event.preventDefault();
 let searcInput = document.querySelector("#search-form-input");
-console.log(searchInput.value)
-
+let cityElement = document.querySelector("#city");
+cityElement.innerHTML = searcInput.value;
 
 }
 
