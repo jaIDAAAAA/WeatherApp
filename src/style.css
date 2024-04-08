@@ -9,3 +9,8 @@ margin: 30px auto;
 padding: 30px;
 border-radius: 15px;
 }
+.weather-emoji {
+    width: 44px;
+    height: 44px;
+    margin-top: 22px;
+}
