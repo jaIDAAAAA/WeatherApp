@@ -13,10 +13,10 @@ function updateWeather(response) {
 
 function searchCity(city) {
     let apiKey = "006e1d3aa42ft5cc55o041daac8db188";
-    let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey`};
+    let apiUrl = "https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey"};
 
     axios.get(apiUrl).then(updateWeather);
-}
+
     
 function handleSearchSubmit(event) {
     event.preventDefault();
