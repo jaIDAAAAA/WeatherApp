@@ -24,3 +24,4 @@ searchCity(searcInput.value);
 
 let searchFormElement = document.querySelector("#Search-form");
 searchFormElement.addEventListener("submit", handleSearchsubmit);
+searchCity("Lisbon");
