@@ -8,6 +8,7 @@ function updateWeather(response) {
 
     cityElement.innerHTML = response.data.city;
     descriptionElement.innerHTML = response.data.description;
+    let humidityElement = document.querySelector("#humidity")  
     temperatureElement.innerHTML = Math.round(temperature);
 }
 
