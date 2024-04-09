@@ -24,3 +24,9 @@ border-radius: 15px;
     height: 90px;
     margin-right: auto;
 }
+.weather-temperature {
+    font-size: 90px;
+}
+.weather-degree-symbol {
+    font-size: 90px;
+}
