@@ -17,5 +17,8 @@ border-radius: 15px;
 }
 .weather-app-container {
     display: flex;
-    
+
+}
+.icon {
+    display: block;
 }
