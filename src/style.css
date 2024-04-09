@@ -16,6 +16,10 @@ border-radius: 15px;
 }
 .search-form-button {
     background-color: lavenderblush;
+    color: black;
+    padding: auto;
+    border: none;
+    padding: 30px;
     
 }
 .weather-app-temperature-container {
