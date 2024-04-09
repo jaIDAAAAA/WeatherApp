@@ -21,4 +21,6 @@ border-radius: 15px;
 }
 .icon {
     display: block;
+    width: 90px;
+    height: 90px;
 }
