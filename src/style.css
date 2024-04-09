@@ -20,6 +20,7 @@ border-radius: 15px;
     padding: auto;
     border: none;
     padding: 30px 15px;
+    border-radius: 5px;
     
 }
 .weather-app-temperature-container {
