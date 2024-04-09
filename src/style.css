@@ -1,6 +1,7 @@
 body{
     background-color: lavender;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
 }
 .weather-app {
 background: white;
@@ -12,6 +13,10 @@ border-radius: 15px;
 .weather-data {
     display: flex;
     justify-content: space-between;
+}
+.search-form-button {
+    color: lavenderblush;
+    
 }
 .weather-app-temperature-container {
     display: block;
@@ -26,6 +31,7 @@ border-radius: 15px;
 }
 .weather-temperature {
     font-size: 90px;
+    font-weight: bold;
 }
 .weather-degree-symbol {
     font-size: 90px;
