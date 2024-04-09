@@ -9,14 +9,13 @@ margin: 30px auto;
 padding: 30px;
 border-radius: 15px;
 }
-.weather-emoji {
-    width: 90px;
-    height: 90px;
-    margin-top: 22px;
-    line-height: 90px;
-}
-.weather-app-container {
+.weather-data {
     display: flex;
+    justify-content: space-between;
+}
+.weather-app-temperature-container {
+    display: block;
+    margin-right: auto;
 
 }
 .icon {
