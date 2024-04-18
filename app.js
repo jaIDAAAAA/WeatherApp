@@ -45,7 +45,7 @@ function handleSearchSubmit(event) {
     let apiUrl = "https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}units=metics"};
     console.log(apiUrl);
     axios.get(apiUrl).then(updateWeather);
-}
+
 
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
