@@ -36,18 +36,15 @@ function formatDate(date) {
     return `${day} :${hours}:${minutes}`;
 }
 
-function searchCity(city) {
-    Event.preventDefault();
-    let apiKey = "006e1d3aa42ft5cc55o041daac8db188";
-    let apiUrl = "https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}units=metics"};
-
-    axios.get(apiUrl).then(updateWeather);
-
     
 function handleSearchSubmit(event) {
     event.preventDefault();
     let searchInput = document.querySelector("#search-form-input");
     searchCity(searchInput.value);
+      let apiKey = "006e1d3aa42ft5cc55o041daac8db188";
+    let apiUrl = "https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}units=metics"};
+    console.log(apiUrl);
+    axios.get(apiUrl).then(updateWeather);
 }
 
 let searchFormElement = document.querySelector("#search-form");
