@@ -17,7 +17,7 @@ border-radius: 15px;
 .search-form-button {
     background-color: lavenderblush;
     color: black;
-    padding: auto;
+    padding: 0;
     border: none;
     padding: 30px 15px;
     border-radius: 5px;
