@@ -3,62 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style.css" />
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
-    <title>Weather App!</title>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>My weather application</title>
   </head>
   <body>
-    <div class="weather-app"> 
+    <div class="SheCodes-logo">
+      <a href="https://www.shecodes.io/" target="_blank" rel="noopener noreferrer">
+        <img src="images/shecodes logo.png" alt="SheCodes logo" width=300>
+      </a>
+     </div>
+ <div class="weather-app">
     <header>
-      <form class="search-form" id="search-form">
-        <input type="search" placeholder="Enter a city..." />
-        <input type="submit" value="Search" class="search-form-button"/>
+      <form id="search-form" id="search-form" >
+        <input
+          type="search"
+          placeholder="Enter a city.."
+          required
+          class="search-form-input"
+          id="search-form-input"
+        />
+        <input type="submit" value="Search" class="search-button" />
       </form>
-     </header>
+    </header>
     <main>
-      <div class="weather-data">
-      <div>
-        <h1 class="weather-city" id = "city">Sydney</h1>
-        <p class="weather-details">
-          <span id="time">
-            Monday 4:10
-          </span>
-          
-          <span id="description"> 
-            Partly Cloudy
-          </span> 
-          <br />
-          Humidity: <strong id="humidity">
-            71%
-          </strong>, 
-          <strong id="wind-speed">
-            Wind: 3.6km/h
-          </strong>
-        </p>
+      <div class="current-weather">
+        <div>
+          <h1>Fort Mill</h1>
+          <p class="description">
+            <span id="today-weather">Saturday 15:32</span>, moderate rain <br />
+            Humidity: <span class="weather-color">87%</span>, Wind: <span class="weather-color">7.2km/h</span>
+          </p>
+        </div>
+        <div class="temperature">
+          <span class="today-temperature-emoji">☀️</span>
+          <span class="today-temperature-number" id="temp-number">57</span>
+          <span class="today-temperature-degree">°F</span>
+        </div>
       </div>
-      <div class="weather-app-temperature-container">
-        <div id="icon"> <img src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png" class="weather-app-icon"></div>
-      </div>
-      <div class="weather-temperature" id="temperature">20</div>
-      <div class="weather-degree-symbol">°C</div>
-      </div>
-      </div>
-    </main>
-    <footer>
-      Coded by
-      <a href="https://github.com/jaIDAAAAA" target="_blank"> Jaida Thomas </a>
-      is
-      <a href="https://github.com/jaIDAAAAA/WeatherApp" target="_blank">
-        open-sourced on GitHub</a
-      >
-      and hosted
-      <a href="https://weatherappjaida.netlify.app/" target="_blank">
-        on Netlify</a
-      >
-      </footer>
-    </div>
-    <script src = "src/app.js">
-      
-    </script>
+           </main>
+           <footer>
+      <p>
+        This project was coded by
+        <a href="www.linkedin.com/in/jaida-thomas-b2b737206" target="_blank">
+          <a href="" target="_blank">Jaida Thomas</a> and is
+        <a href="www.linkedin.com/in/jaida-thomas-b2b737206" target="_blank">
+          on LinkedIn</a
+        >
+        and
+        <a href="#" target="_blank">hosted on Netlify</a>
+      </p>
+    </footer>
+  </div>
+  <script src="src/index.js"></script>
   </body>
 </html>

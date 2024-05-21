@@ -1,43 +1,71 @@
-body{
-    background-color: lavender;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-bottom: 10px;
+body {
+    background: rgb(239, 237, 247);
+    font-family: Georgia, "Times New Roman", Times, serif;
 }
-.weather-app {
-background: white;
-max-width: 500px;
-margin: 30px auto;
-padding: 30px;
-border-radius: 15px;
-}
-.weather-data {
-    display: flex;
-    justify-content: space-between;
-}
-.search-form-button {
-    background-color: lavenderblush;
-    color: black;
-    padding: 0;
-    border: none;
-    padding: 15px 30px;
-    border-radius: 5px;
-    
-}
-.weather-app-temperature-container {
-    display: block;
-    margin-right: auto;
 
+.weather-app {
+    background: white;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: rgba(65, 50, 100, 0.08);
 }
-.icon {
-    display: block;
-    width: 90px;
-    height: 90px;
-    margin-right: auto;
+
+.search-button {
+    background: #885df1;
+    color: white;
+    border: none;
+    padding: 15px 0;
+    height: 50px;
+    width: 150px;
+    border-radius: 12px;
+    line-height: 20px;
+    font-weight: 700;
+    font-size: 15px;
 }
-.weather-temperature {
-    font-size: 90px;
-    font-weight: bold;
+
+.current-weather {
+    display: flex;
+    justify-content: space-betwseen;
 }
-.weather-degree-symbol {
-    font-size: 90px;
+
+.today-temperature-emoji {
+    position: relative;
+    font-size: 30px;
+}
+
+.today-temperature-number {
+    font-size: 80px;
+}
+
+.today-temperature-degree {
+    font-size: 55px;
+}
+
+.city-input {
+    border-radius: 6px;
+    display: inline-block;
+    width: 300px;
+    height: 50px;
+    appearance: none;
+    background: #fff;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.weather-color {
+    color: red;
+}
+
+.description {
+    color: gray;
+}
+
+.high-temperature {
+    color: red;
+}
+
+.low-temperature {
+    color: pink;
 }
