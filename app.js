@@ -11,7 +11,7 @@ function updateWeather(response) {
     let iconElement =  document.querySelector("#icon");
     
     
-    icon.innerHTML = `<img src="${response.condition.icon_url}"  class="emoji" />`;
+    icon.innerHTML = `<img src="${response.data.condition.icon_url}"  class="emoji" />`;
 
     
 
