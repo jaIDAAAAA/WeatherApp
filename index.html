@@ -25,36 +25,29 @@
         <input type="submit" value="Search" class="search-button" />
       </form>
     </header>
-    <main>
-      <div class="current-weather">
-        <div>
-          <h1 class="weather-app-city" id="city"></h1>
-          <p class="description">
-            <span id="time">
-              Saturday 15:32
-            </span> 
-            <span id="description">
+   <main>
+        <div class="current-weather">
+          <div>
+            <h1 class="weather-app-city" id="city"></h1>
+            <p class="description">
+              <span id="time"> Saturday 15:32 </span>
+              <span id="description"> </span>
+              , moderate rain
+              <br />
+              Humidity: <span id="humidity">87%</span>
+              , Wind:
+              <span id="wind-speed"> 7.2km/h </span>
+            </p>
+          </div>
+          <div class="temperature">
+            <span class="today-temperature-emoji">
+              <div class="icon" id="icon"></div>
             </span>
-            , moderate rain 
-            <br />
-            Humidity: <span id="wind-speed">87%</span>
-            , Wind: 
-            <span id="wind-speed">
-              7.2km/h
-            </span>
-          </p>
+            <span class="today-temperature-number" id="temp-number"></span>
+            <span class="today-temperature-degree">°C</span>
+          </div>
         </div>
-        <div class="temperature">
-          <span class="today-temperature-emoji"> 
-            <div class="icon">
-             
-          </span>
-            </div>
-          <span class="today-temperature-number" id="temp-number"></span>
-          <span class="today-temperature-degree">°C</span>
-        </div>
-      </div>
-           </main>
+      </main>
            <footer>
       <p>
         This project was coded by
