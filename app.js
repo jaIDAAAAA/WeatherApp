@@ -8,6 +8,11 @@ function updateWeather(response) {
     let timeElement = document.querySelector("#time");
     let date = new Date(response.data.time * 1000); 
 
+    let iconElement =  document.querySelector("#icon");
+    
+    
+    icon.innerHTML = `<img src="${response.condition.icon_url}"  class="emoji" />`;
+
     
 
     cityElement.innerHTML = response.data.city;
@@ -50,5 +55,4 @@ function handleSearchSubmit(event) {
 
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit" , handleSearchSubmit);
-
 searchCity("Lisbon");

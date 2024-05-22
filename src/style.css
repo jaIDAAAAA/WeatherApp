@@ -31,8 +31,8 @@ body {
 }
 
 .today-temperature-emoji {
-    position: relative;
-    font-size: 30px;
+    width: 48px;
+    height: 48px;
 }
 
 .today-temperature-number {
