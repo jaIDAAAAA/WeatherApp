@@ -43,6 +43,13 @@ body {
     font-size: 55px;
 }
 
+.weather-forecast
+{margin-top: 20px;
+text-align: center;
+
+
+}
+
 .city-input {
     border-radius: 6px;
     display: inline-block;
