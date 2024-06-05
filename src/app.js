@@ -45,3 +45,20 @@ function handleSearchSubmit(event) {
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit" , handleSearchSubmit);
 searchCity("Lisbon");
+
+let forecast = document.querySelector("#forecast");
+
+
+forecast.innerHTML = `<div class="current-weather">
+          <div>
+            <h1 class="weather-app-city" id="city"></h1>
+            <p class="description">
+              <span id="time"> Saturday 15:32 </span>
+              <span id="description"> </span>
+              , moderate rain
+              <br />
+              Humidity: <span id="humidity">87%</span>
+              , Wind:
+              <span id="wind-speed"> 7.2km/h </span>
+            </p>
+          </div>`;
