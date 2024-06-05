@@ -42,14 +42,15 @@ function handleSearchSubmit(event) {
     cityElement.innerHTML = searchInput.value; 
     searchCity(searchInput.value);
 } 
-let searchFormElement = document.querySelector("#search-form");
-searchFormElement.addEventListener("submit" , handleSearchSubmit);
-searchCity("Lisbon");
 
+function displayForecast() {
 let forecast = document.querySelector("#forecast");
+let days = [`Sun`, `Mon`, `Tues`, `Wed`, `Thurs`, `Fri`];
+let forecastHtml = "";
 
-
-forecast.innerHTML = `<div class="current-weather">
+days.forEach(function(day) {
+forecastHtml =
+forecastHtml = `<div class="current-weather">
           <div>
             <h1 class="weather-app-city" id="city"></h1>
             <p class="description">
@@ -62,3 +63,12 @@ forecast.innerHTML = `<div class="current-weather">
               <span id="wind-speed"> 7.2km/h </span>
             </p>
           </div>`;
+}};
+
+forecastElement.innerHTML = forecastHtml;
+
+let searchFormElement = document.querySelector("#search-form");
+searchFormElement.addEventListener("submit" , handleSearchSubmit);
+searchCity("Lisbon");
+
+displayForecast();
