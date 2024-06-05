@@ -48,13 +48,18 @@ body {
 text-align: center;
 }
 
-.weather-forecast-date {
+.weather-forecast-date, .weather-forecast-temperature-min {
 font-size: 16px;
 color: #000;
+opacity: 0.5;
+}
+.weather-forecast-temperature-min {
+    opacity: 0.5;
 }
 
 .weather-forecast-temperature{
 font-size: 13px;
+color: #000;
 }
 
 .city-input {
