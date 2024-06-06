@@ -44,27 +44,23 @@ function handleSearchSubmit(event) {
 } 
 
 function displayForecast() {
-let forecast = document.querySelector("#forecast");
+
 let days = [`Sun`, `Mon`, `Tues`, `Wed`, `Thurs`, `Fri`];
 let forecastHtml = "";
 
 days.forEach(function(day) {
 forecastHtml =
-forecastHtml = `<div class="current-weather">
-          <div>
-            <h1 class="weather-app-city" id="city"></h1>
-            <p class="description">
-              <span id="time"> Saturday 15:32 </span>
-              <span id="description"> </span>
-              , moderate rain
-              <br />
-              Humidity: <span id="humidity">87%</span>
-              , Wind:
-              <span id="wind-speed"> 7.2km/h </span>
-            </p>
-          </div>`;
+forecastHtml = `<div class="temperature">
+            <span class="today-temperature-emoji">
+              <div class="icon" id="icon"></div>
+            </span>
+            <span class="today-temperature-number" id="temp-number"></span>
+            <span class="today-temperature-degree">°C</span>
+          </div>
+        </div>`;
 }};
 
+let forecast = document.querySelector("#forecast");
 forecastElement.innerHTML = forecastHtml;
 
 let searchFormElement = document.querySelector("#search-form");
