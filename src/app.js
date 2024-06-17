@@ -48,9 +48,11 @@ function displayForecast() {
 let days = [`Sun`, `Mon`, `Tues`, `Wed`, `Thurs`, `Fri`];
 let forecastHtml = "";
 
-days.forEach(function(day) {
+days.forEach(function (day) {
 forecastHtml =
-forecastHtml + `<div class="temperature">
+forecastHtml + `<p class="description">
+            <div id="today-weather">${day}</div> </p>
+          <div class="temperature">
             <span class="today-temperature-emoji">
               <div class="icon" id="icon"></div>
             </span>
@@ -60,7 +62,7 @@ forecastHtml + `<div class="temperature">
         </div>`;
 }};
 
-let forecast = document.querySelector("#forecast");
+let forecastElement = document.querySelector("#forecast");
 forecastElement.innerHTML = forecastHtml;
 
 let searchFormElement = document.querySelector("#search-form");
