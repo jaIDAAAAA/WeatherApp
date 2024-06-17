@@ -50,7 +50,7 @@ let forecastHtml = "";
 
 days.forEach(function(day) {
 forecastHtml =
-forecastHtml = `<div class="temperature">
+forecastHtml + `<div class="temperature">
             <span class="today-temperature-emoji">
               <div class="icon" id="icon"></div>
             </span>
