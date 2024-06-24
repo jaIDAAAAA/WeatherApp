@@ -43,7 +43,15 @@ function handleSearchSubmit(event) {
     searchCity(searchInput.value);
 } 
 
+function getForecast(city) {
+  let apiKey = "006e1d3aa42ft5cc55o041daac8db188";
+let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`; 
+axios(apiUrl).then(displayForecast);
+console.log(apiUrl);
+}
+
 function displayForecast() {
+console.log(response.data);
 
 let days = [`Sun`, `Mon`, `Tues`, `Wed`, `Thurs`, `Fri`];
 let forecastHtml = "";
@@ -68,5 +76,5 @@ forecastElement.innerHTML = forecastHtml;
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit" , handleSearchSubmit);
 searchCity("Lisbon");
-
+getForecast("Libson")
 displayForecast();
