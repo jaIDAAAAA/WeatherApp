@@ -38,6 +38,10 @@ body {
     border-color: #fff;
 }
 
+.current-weather {
+    margin-top: auto;
+}
+
 .weather-temp-container {
     display: flex;
     justify-content: space-between;
