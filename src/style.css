@@ -38,7 +38,7 @@ body {
     border-color: #fff;
 }
 
-.weather-temp-container,  .currrent-weather{
+.weather-temp-container {
     display: flex;
     justify-content: space-between;
 }
