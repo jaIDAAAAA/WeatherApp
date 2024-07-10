@@ -50,15 +50,16 @@ axios(apiUrl).then(displayForecast);
 console.log(apiUrl);
 }
 
-function displayForecast() {
-console.log(response.data);
+function displayForecast(response) {
+  console.log(response.data);
 
-let days = [`Sun`, `Mon`, `Tues`, `Wed`, `Thurs`, `Fri`];
-let forecastHtml = "";
+  let days = [`Sun`, `Mon`, `Tues`, `Wed`, `Thurs`, `Fri`];
+  let forecastHtml = "";
 
-days.forEach(function (day) {
-forecastHtml =
-forecastHtml + `<p class="description">
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `<p class="description">
             <div id="today-weather">${day}</div> </p>
           <div class="temperature">
             <span class="today-temperature-emoji">
@@ -68,13 +69,14 @@ forecastHtml + `<p class="description">
             <span class="today-temperature-degree">°C</span>
           </div>
         </div>`;
-}};
+  });
 
-let forecastElement = document.querySelector("#forecast");
-forecastElement.innerHTML = forecastHtml;
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = forecastHtml;
+}
 
-let searchFormElement = document.querySelector("#search-form");
-searchFormElement.addEventListener("submit" , handleSearchSubmit);
+let searchFormElement = document.querySelector("#enter-form");
+searchFormElement.addEventListener("submit", handleSearchSubmit);
 searchCity("Lisbon");
-getForecast("Libson")
+getForecast("Lisbon");
 displayForecast();
