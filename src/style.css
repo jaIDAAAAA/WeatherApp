@@ -37,7 +37,7 @@ body {
     border-color: #fff;
 }
 
-.current-weather {
+.weather-temp-container,  .currrent-weather{
     display: flex;
     justify-content: space-between;
 }
@@ -48,9 +48,6 @@ body {
     font-weight: bold;
 }
 
-.weather-temp-container {
-    display: flex;
-}
 
 .emoji {
     position: relative;
