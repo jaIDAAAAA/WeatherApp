@@ -31,14 +31,21 @@
     <div class="weather-app" id="forecast">
  
       <main>
-        <p class="description">
-            <div id="today-weather"></div> </p>
+        <div class="weather-data">
+            <div id="today-weather"></div> 
+        </div>
+        <p class="weather-details">
+          <span id="time"></span>,
+          <span id="description"></span>
+          <br />
+          Humidity: <strong id="humidity"></strong>, Wind: <strong id="wind-speed"></strong>
+        </p>
           <div class="temperature">
             <span class="today-temperature-emoji">
               <div class="icon" id="icon"></div>
-            </span>
             <span class="today-temperature-number" id="temp-number"></span>
             <span class="today-temperature-degree">°C</span>
+            </span>
           </div>
         </div>
       </main>  
