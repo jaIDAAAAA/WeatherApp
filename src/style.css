@@ -28,23 +28,20 @@ body {
 
 .current-weather {
     display: flex;
-    justify-content: space-betwseen;
+    justify-content: space-between;
 }
 
-.today-temperature-emoji {
+.weather-emoji {
     width: 48px;
     height: 48px;
 }
 
-.today-temperature-number {
+.weather-temperature {
     font-size: 80px;
 }
 
-.today-temperature-degree {
-    font-size: 55px;
-}
 
-.weather-forecast
+.forecast
 {margin-top: 20px;
 text-align: center;
 }
