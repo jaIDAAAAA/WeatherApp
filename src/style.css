@@ -26,10 +26,6 @@ body {
     font-size: 15px;
 }
 
-.current-weather {
-    display: flex;
-    justify-content: space-between;
-}
 
 .weather-emoji {
     width: 48px;
@@ -51,14 +47,6 @@ font-size: 16px;
 color: #000;
 opacity: 0.5;
 }
-.weather-forecast-temperature-min {
-    opacity: 0.5;
-}
-
-.weather-forecast-temperature{
-font-size: 13px;
-color: #000;
-}
 
 .city-input {
     border-radius: 6px;
@@ -69,20 +57,4 @@ color: #000;
     background: #fff;
     background-color: #fff;
     border-color: #fff;
-}
-
-.weather-color {
-    color: red;
-}
-
-.weather-data {
-    color: gray;
-}
-
-.high-temperature {
-    color: red;
-}
-
-.low-temperature {
-    color: pink;
 }
