@@ -1,6 +1,7 @@
 body {
     background: rgb(239, 237, 247);
     font-family: Georgia, "Times New Roman", Times, serif;
+    justify-self: unset;
 }
 
 .weather-app {
@@ -39,6 +40,12 @@ body {
 .current-weather {
     display: flex;
     justify-content: space-between;
+}
+
+.weather-temp {
+    font-size: 88px;
+    line-height: 88px;
+    font-weight: bold;
 }
 
 .weather-temp-container {
