@@ -25,6 +25,17 @@ body {
     font-size: 15px;
 }
 
+.city-input {
+    border-radius: 6px;
+    display: inline-block;
+    width: 300px;
+    height: 50px;
+    appearance: none;
+    background: #fff;
+    background-color: #fff;
+    border-color: #fff;
+}
+
 .current-weather {
     display: flex;
     justify-content: space-between;
@@ -34,7 +45,7 @@ body {
     display: flex;
 }
 
-.weather-forecast-emoji {
+.emoji {
     position: relative;
     font-size: 30px;
 }
@@ -49,17 +60,17 @@ text-align: center;
 color: rgba(39, 33, 66, 0.4);
 font-size: 16px;
 line-height: 20px;
+margin-bottom: 10px;
 }
 
-.city-input {
-    border-radius: 6px;
-    display: inline-block;
-    width: 300px;
-    height: 50px;
-    appearance: none;
-    background: #fff;
-    background-color: #fff;
-    border-color: #fff;
+.weather-forecast-emoji {
+    font-size: 48px;
+    text-align: center;
+}
+
+.weather-forecast-temperatures {
+    text-align: center;
+    color: #f65282;
 }
 
 .weather-color {
