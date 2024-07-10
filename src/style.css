@@ -8,6 +8,7 @@ body {
     background: white;
     max-width: 500px;
     margin: 30px auto;
+    margin-bottom: auto;
     padding: 30px;
     border-radius: 15px;
     box-shadow: rgba(65, 50, 100, 0.08);
