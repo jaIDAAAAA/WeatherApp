@@ -10,11 +10,10 @@ body {
     padding: 30px;
     border-radius: 15px;
     box-shadow: rgba(65, 50, 100, 0.08);
-    text-orientation: sideways;
 }
 
 .search-button {
-    background: #fa93d9;
+    background: #885df1;
     color: white;
     border: none;
     padding: 15px 0;
@@ -26,26 +25,22 @@ body {
     font-size: 15px;
 }
 
-
-.weather-emoji {
-    width: 48px;
-    height: 48px;
+.current-weather {
+    display: flex;
+    justify-content: space-betwseen;
 }
 
-.weather-temperature {
+.today-temperature-emoji {
+    position: relative;
+    font-size: 30px;
+}
+
+.today-temperature-number {
     font-size: 80px;
 }
 
-
-.forecast
-{margin-top: 20px;
-text-align: center;
-}
-
-.weather-forecast-date, .weather-forecast-temperature-min {
-font-size: 16px;
-color: #000;
-opacity: 0.5;
+.today-temperature-degree {
+    font-size: 55px;
 }
 
 .city-input {
@@ -57,4 +52,20 @@ opacity: 0.5;
     background: #fff;
     background-color: #fff;
     border-color: #fff;
+}
+
+.weather-color {
+    color: red;
+}
+
+.description {
+    color: gray;
+}
+
+.high-temperature {
+    color: red;
+}
+
+.low-temperature {
+    color: pink;
 }

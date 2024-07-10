@@ -28,25 +28,22 @@
         />
         <input type="submit" value="Search" class="search-button" />
       </form>
-    <div class="weather-app" id="forecast">
+    <div class="weather-app" id="forecast"></div>
       <main>
-        <div class="weather-data">
-          <div>
-            <h1 class="weather-city" id="city"></h1>
-            <p class="weather-app-details">
-              <span id="time"></span>,
-              <span id="description"></span>
-              <br />
-              Humidity: <strong id="humidity"></strong>, Wind:
-              <strong id="wind-speed"></strong>
-            </p>
-          </div>
-          <div class="weather-app-temperature-container">
-            <div id="weather-emoji"></div>
-            <div class="weather-temperature" id="temperature"></div>
-            <div class="weather-unit">°C</div>
-          </div>
+        <div class="current-weather">
+        <div>
+          <h1>Paris</h1>
+          <p class="description">
+            Saturday 15:32, moderate rain <br />
+            Humidity: <span class="weather-color">87%</span>, Wind: <span class="weather-color">7.2km/h</span>
+          </p>
         </div>
+        <div class="temperature">
+          <span class="today-temperature-emoji">☀️</span>
+          <span class="today-temperature-number">24</span>
+          <span class="today-temperature-degree">°C</span>
+        </div>
+      </div>
       </main>  
       <footer>
         <p>
