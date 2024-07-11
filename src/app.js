@@ -62,9 +62,9 @@ function displayForecast(response) {
       `<div class="weather-forecast"> 
         <div class="weather-forecast-day">
           <div class="weather-forecast-date">${day}</div> 
-          <div class="weather-forecast-emoji"></div> 
+          <div class="weather-forecast-emoji">🌤️</div> 
           <div class="weather-forecast-temperatures">
-            <strong>°</strong><div class="weather-forecast-temperature">15°</div>
+            <strong>°15</strong><div class="weather-forecast-temperature">°9</div>
           </div> 
         </div>
     `;});
