@@ -77,4 +77,3 @@ let searchFormElement = document.querySelector("#enter-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 searchCity("Lisbon");
 getForecast("Lisbon");
-displayForecast();
