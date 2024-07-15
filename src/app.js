@@ -1,5 +1,5 @@
 function updateWeather(response) {
-  let temperatureElement = document.querySelector("#temp-number");
+  let temperatureElement = document.querySelector("#temperature");
   let temperature = response.data.temperature.current;
   let cityElement = document.querySelector("#city");
   let descriptionElement = document.querySelector("#description");
@@ -20,34 +20,42 @@ function updateWeather(response) {
   temperatureElement.innerHTML = Math.round(temperature);
 }
 function formatDate(date) {
-   
-    let minutes = date.getMinutes();
-    let hours = date.getHours();
-    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    let day = days [date.getDay()];
+  let minutes = date.getMinutes();
+  let hours = date.getHours();
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = days[date.getDay()];
 
-    if(minutes < 10) {
-        minutes = `0${minutes}`; }
-    return `${day} ${hours}:${minutes}`;
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+  return `${day} ${hours}:${minutes}`;
 }
 function searchCity(city) {
-let apiKey = "006e1d3aa42ft5cc55o041daac8db188";
-let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`; 
-axios.get(apiUrl).then(updateWeather);
+  let apiKey = "006e1d3aa42ft5cc55o041daac8db188";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(updateWeather);
 }
 function handleSearchSubmit(event) {
-    event.preventDefault();
-    let searchInput = document.querySelector("#search-form-input");
-    let cityElement = document.querySelector("#city");
-    cityElement.innerHTML = searchInput.value; 
-    searchCity(searchInput.value);
-} 
+  event.preventDefault();
+  let searchInput = document.querySelector("#search-city-input");
+  let cityElement = document.querySelector("#city");
+  cityElement.innerHTML = searchInput.value;
+  searchCity(searchInput.value);
+}
 
 function getForecast(city) {
   let apiKey = "006e1d3aa42ft5cc55o041daac8db188";
-let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`; 
-axios(apiUrl).then(displayForecast);
-console.log(apiUrl);
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios(apiUrl).then(displayForecast);
+  console.log(apiUrl);
 }
 
 function displayForecast(response) {
@@ -67,7 +75,8 @@ function displayForecast(response) {
             <strong>°15</strong><div class="weather-forecast-temperature">°9</div>
           </div> 
         </div>
-    `;});
+    `;
+  });
 
   let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = forecastHtml;
@@ -76,4 +85,4 @@ function displayForecast(response) {
 let searchFormElement = document.querySelector("#enter-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 searchCity("Lisbon");
-getForecast("Lisbon");
+// getForecast("Lisbon");
