@@ -18,7 +18,10 @@ function updateWeather(response) {
   humidityElement.innerHTML = `${response.data.temperature.humidity} %`;
   windSpeedElement.innerHTML = `${response.data.wind.speed}`;
   temperatureElement.innerHTML = Math.round(temperature);
+  
+  getForecast(response.data.city);
 }
+
 function formatDate(date) {
   let minutes = date.getMinutes();
   let hours = date.getHours();
@@ -69,7 +72,7 @@ function displayForecast(response) {
       forecastHtml +
       `<div class="weather-forecast"> 
         <div class="weather-forecast-day">
-          <div class="weather-forecast-date">${day}</div> 
+          <div class="weather-forecast-date">Tue</div> 
           <div class="weather-forecast-emoji">🌤️</div> 
           <div class="weather-forecast-temperatures">
             <strong>°15</strong><div class="weather-forecast-temperature">°9</div>
