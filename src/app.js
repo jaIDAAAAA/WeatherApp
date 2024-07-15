@@ -67,7 +67,7 @@ function displayForecast(response) {
   days.forEach(function (day) {
     forecastHtml =
       forecastHtml +
-      `<div class="weather-forecast"> 
+      <div class="weather-forecast"> 
         <div class="weather-forecast-day">
           <div class="weather-forecast-date">${day}</div> 
           <div class="weather-forecast-emoji">🌤️</div> 
@@ -75,13 +75,23 @@ function displayForecast(response) {
             <strong>°15</strong><div class="weather-forecast-temperature">°9</div>
           </div> 
         </div>
-    `;
+      </div>; 
   });
 
   let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = forecastHtml;
 }
 
+function handleSearchSubmit(event) {
+  event.preventDefault();
+  let searchCityElement = document.querySelector("#enter-city");
+  let city = searchCityElement.value;
+  searchCity(city);
+}
+
 let searchFormElement = document.querySelector("#enter-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
+
+function searchCity(city) {
+}
 searchCity("Lisbon");
