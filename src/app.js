@@ -58,18 +58,16 @@ function getForecast(city) {
   console.log(apiUrl);
 }
 
-function displayForecast(response) {
-  console.log(response.data);
+function displayForecast() {
 
-  let days = [`Sun`, `Mon`, `Tues`, `Wed`, `Thurs`, `Fri`];
+  let days = [ "Tue", "Wed", "Thu", "Fri", "Sat", "Sun" ];
   let forecastHtml = "";
 
   days.forEach(function (day) {
-    forecastHtml =
-      forecastHtml +
+   forecastHtml = forecastHtml +
       `<div class="weather-forecast"> 
         <div class="weather-forecast-day">
-          <div class="weather-forecast-date">Tue</div> 
+          <div class="weather-forecast-date">${day}</div> 
           <div class="weather-forecast-emoji">🌤️</div> 
           <div class="weather-forecast-temperatures">
           <div class="weather-forecast-temperature">
@@ -85,4 +83,4 @@ function displayForecast(response) {
 
 let searchFormElement = document.querySelector("#enter-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
-searchCity("Lisbon");
+
