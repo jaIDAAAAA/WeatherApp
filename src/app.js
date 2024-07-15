@@ -69,9 +69,10 @@ function displayForecast(response) {
       forecastHtml +
       `<div class="weather-forecast"> 
         <div class="weather-forecast-day">
-          <div class="weather-forecast-date">${day}</div> 
+          <div class="weather-forecast-date">Tue</div> 
           <div class="weather-forecast-emoji">🌤️</div> 
           <div class="weather-forecast-temperatures">
+          <div class="weather-forecast-temperature">
             <strong>°15</strong><div class="weather-forecast-temperature">°9</div>
           </div> 
         </div>
