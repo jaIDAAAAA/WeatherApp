@@ -11,7 +11,7 @@ function updateWeather(response) {
 
   console.log(response.data.time);
 
-  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}"  class="emoji" />`;
+  iconElement.innerHTML =`<img src="${response.data.condition.icon_url}"  class="weather-emoji" />`;
   cityElement.innerHTML = response.data.city;
   timeElement.innerHTML = formatDate(date);
   descriptionElement.innerHTML = response.data.condition.description;
@@ -85,4 +85,4 @@ function displayForecast(response) {
 let searchFormElement = document.querySelector("#enter-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 searchCity("Lisbon");
-// getForecast("Lisbon");
+getForecast("Lisbon");
