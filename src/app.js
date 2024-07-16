@@ -11,7 +11,7 @@ function updateWeather(response) {
 
 
 
-  iconElement.innerHTML =`<img src="${response.data.condition.icon_url}"  class="weather-emoji" />`;
+  iconElement.innerHTML =`<img src="${response.data.condition.icon_url}"  class="weather-forecast-emoji" />`;
   cityElement.innerHTML = response.data.city;
   timeElement.innerHTML = formatDate(date);
   descriptionElement.innerHTML = response.data.condition.description;
@@ -70,26 +70,21 @@ function displayForecast(response) {
   days.forEach(function (day) {
     forecastHtml =
       forecastHtml +
-      `<div class="weather-forecast"> 
-        <div class="weather-forecast-day">
-          <div class="weather-forecast-date">Tue</div> 
-          <div class="weather-forecast-emoji">🌤️</div> 
-          <div class="weather-forecast-temperatures">
-            <strong>°15</strong><div class="weather-forecast-temperature">°9</div>
-          </div> 
+      `<div class="weather-forecast-day">
+        <div class="weather-forecast-date">${day}</div>
+        <div class="weather-forecast-emoji">🌤️</div>
+        <div class="weather-forecast-temperatures">
+          <div class="weather-forecast-temperature">
+            <strong>15º</strong>
+          </div>
+          <div class="weather-forecast-temperature">9º</div>
         </div>
-      </div>`; 
+      </div>
+    `; 
   });
 
   let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = forecastHtml;
-}
-
-function handleSearchSubmit(event) {
-  event.preventDefault();
-  let searchCityElement = document.querySelector("#enter-city");
-  let city = searchCityElement.value;
-  searchCity(city);
 }
 
 let searchFormElement = document.querySelector("#enter-form");
