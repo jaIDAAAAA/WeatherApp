@@ -11,7 +11,7 @@ function updateWeather(response) {
 
 
 
-  emojiElement.innerHTML =<img src="${response.data.condition.emoji_url}"  class="weather-forecast-emoji" />;
+  emojiElement.innerHTML = `<img src="${response.data.condition.emoji_url}"  class="weather-forecast-emoji" />`;
   cityElement.innerHTML = response.data.city;
   timeElement.innerHTML = formatDate(date);
   descriptionElement.innerHTML = response.data.condition.description;
