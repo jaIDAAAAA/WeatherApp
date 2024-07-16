@@ -7,11 +7,11 @@ function updateWeather(response) {
   let windSpeedElement = document.querySelector("#wind-speed");
   let timeElement = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
-  let emojiElement = document.querySelector("#emoji");
+  let iconElement = document.querySelector("#emoji");
 
 
 
-  emojiElement.innerHTML = `<img src="${response.data.condition.emoji_url}"  class="weather-forecast-emoji" />`;
+  iconElement.innerHTML = `<img src="${response.data.condition.emoji_url}"  class="weather-forecast-emoji" />`;
   cityElement.innerHTML = response.data.city;
   timeElement.innerHTML = formatDate(date);
   descriptionElement.innerHTML = response.data.condition.description;
@@ -72,14 +72,14 @@ function displayForecast(response) {
       forecastHtml +
       `<div class="weather-forecast-day">
         <div class="weather-forecast-date">${formatDate(day.time)}</div>
-        <div class="weather-forecast-emoji">
-        <img src="${response.data.condition.emoji_url}"  class="weather-forecast-emoji" />
+        <div class="weather-forecast-icon">
+        <img src="${response.data.condition.icon_url}"  class="weather-forecast-emoji" />
         </div>
         <div class="weather-forecast-temperatures">
           <div class="weather-forecast-temperature">
-            <strong>${Math.round(day.temperature.maximum)}</strong>
+            <strong>15°</strong>
           </div>
-          <div class="weather-forecast-temperature">${Math.round(day.temperature.minimum)}</div>
+          <div class="weather-forecast-temperature">9°</div>
         </div>
       </div>
     `; 

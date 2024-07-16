@@ -52,7 +52,7 @@ body {
 }
 
 
-.weather-emoji {
+.weather-icon {
     position: relative;
     font-size: 30px;
 }
@@ -72,7 +72,7 @@ line-height: 20px;
 margin-bottom: 10px;
 }
 
-.weather-forecast-emoji {
+.weather-forecast-icon {
     font-size: 48px;
     text-align: center;
 }
