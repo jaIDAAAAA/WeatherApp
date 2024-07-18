@@ -39,7 +39,7 @@ body {
     border-color: #fff;
 }
 .p {
-    display: flex;
+    display: block;
 }
 
 
