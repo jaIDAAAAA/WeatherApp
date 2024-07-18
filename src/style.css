@@ -1,7 +1,7 @@
 body {
     background: rgb(239, 237, 247);
     font-family: Georgia, "Times New Roman", Times, serif;
-    justify-self: unset;
+    justify-self: flex-start;
 }
 
 .weather-app {
