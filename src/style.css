@@ -38,6 +38,9 @@ body {
     background-color: #fff;
     border-color: #fff;
 }
+.p {
+    display: inline;
+}
 
 
 .weather-temp-container {
