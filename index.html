@@ -1,59 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
-    <link rel="stylesheet" href="src/style.css" />
-    <title>Weather App!</title>
-  </head>
-  <body>
-    <div class="weather-app">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  <link rel="stylesheet" href="src/style.css" />
+  <title>Weather App!</title>
+</head>
+
+<body>
+  <div class="weather-app">
     <header>
       <form id="enter-form">
-        <input
-          type="search"
-          placeholder="Enter a city.."
-          required
-          class="city-input"
-          id="search-city-input"
-        />
+        <input type="search" placeholder="Enter a city.." required class="city-input" id="search-city-input" />
         <input type="submit" value="Search" class="search-button" />
       </form>
-    
+
     </header>
     <main>
+      <div class="weather-temp-container">
         <div class="weather-data">
-         <h1 class="weather-city" id="city">Lisbon</h1>
-         <p class="weather-details">
-          <span id="time">Monday 21:11</span>,
-          <span id="description">few clouds</span>
-          <br />
-          Humidity:  <strong id="humidity">71</strong>, Wind: <strong id="wind-speed">5.14 km/h</strong>
-         </p>
-         </div>
-         <div class="weather-temp-container"></div>
-         <div id="weather-icon">
-          <img src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-night.png" class="weather-icon" id="icon"> 
-        
-         <div class="weather-temp" id="temperature">20</div>
-         <div class="weather-unit">°C</div>
+          <h1 class="weather-city" id="city">Lisbon</h1>
+          <p class="weather-details">
+            <span id="time">Monday 21:11</span>,
+            <span id="description">few clouds</span>
+            <br />
+            Humidity: <strong id="humidity">71</strong>, Wind: <strong id="wind-speed">5.14 km/h</strong>
+          </p>
         </div>
+        <div id="weather-icon">
+          <div class="weather-icon" id="icon"></div>
+
+          <div class="weather-temp" id="temperature">20</div>
+          <div class="weather-unit">°C</div>
+        </div>
+      </div>
+
       <div class="weather-forecast" id="forecast">
-      </main>  
-      <footer>
-        <p>
-          This project was coded by
-          <a href="https://github.com/jaIDAAAAA/" target="_blank"
-            >Jaida Thomas</a
-          >
-          and is
-          <a href="https://weatherappjaida.netlify.app/?" target="_blank">
-            hosted on Netlify</a
-          >
-        </p>
-      </footer>
-   </div>
-    <script src="src/app.js"></script>
-  </body>
+    </main>
+    <footer>
+      <p>
+        This project was coded by
+        <a href="https://github.com/jaIDAAAAA/" target="_blank">Jaida Thomas</a>
+        and is
+        <a href="https://weatherappjaida.netlify.app/?" target="_blank">
+          hosted on Netlify</a>
+      </p>
+    </footer>
+  </div>
+  <script src="src/app.js"></script>
+</body>
+
 </html>
