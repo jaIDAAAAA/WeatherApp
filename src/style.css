@@ -5,7 +5,7 @@ body {
 }
 
 .weather-app {
-    background: #c2e7d8;
+    background: #cef1ea;
     max-width: 700px;
     margin: 30px auto;
     margin-bottom: auto;
@@ -16,7 +16,7 @@ body {
 }
 
 .search-button {
-    background: #bbe4e9;
+    background: #f1a6bb;
     color: white;
     border: none;
     padding: 15px 0;
