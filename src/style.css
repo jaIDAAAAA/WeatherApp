@@ -27,7 +27,9 @@ body {
     font-weight: 700;
     font-size: 15px;
 }
-
+.h1 {
+    font-family: "Danfo", "serif";
+}
 .city-input {
     border-radius: 6px;
     display: inline-block;
